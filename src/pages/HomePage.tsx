@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const [categories, setCategories] = useState([]);
@@ -21,5 +22,24 @@ export default function HomePage() {
   }, []);
 
   // fetch categories and show them
-  return <h1 className="text-xl font-semibold">Home Page (Categories)</h1>;
+  return (
+    <main>
+      <h1 className="text-xl font-semibold">Home Page (Categories)</h1>
+      {categories &&
+        categories.map((category) => (
+          <Link
+            to={`/category/${category.strCategory}`}
+            key={category.idCategory}
+          >
+            <img
+              className="ml-45"
+              src={category.strCategoryThumb}
+              alt={`Image of ${category.strCategory} category`}
+            />
+
+            <h3>{category.strCategory}</h3>
+          </Link>
+        ))}
+    </main>
+  );
 }
