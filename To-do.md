@@ -1,9 +1,5 @@
 # Barebones MVP Todo List
 
-This is the minimum required to complete the project correctly and on time.
-
----
-
 ## 1. Core Hooks
 
 - [ ] **Create `useFetch` hook**
