@@ -16,24 +16,24 @@
 
 ## 2. Favorites Context (Global State)
 
-- [ ] **Create `FavoritesContext`**
-  - [ ] Holds `favoriteIds: string[]`.
-  - [ ] `addFavorite(id)`
-  - [ ] `removeFavorite(id)`
-  - [ ] `isFavorite(id)`
-- [ ] Use `useLocalStorage` internally so favorites persist.
-- [ ] Wrap the app with `FavoritesProvider`.
+- [x] **Create `FavoritesContext`**
+  - [x] Holds `favoriteIds: string[]`.
+  - [x] `addFavorite(id)`
+  - [x] `removeFavorite(id)`
+  - [x] `isFavorite(id)`
+- [x] Use `useLocalStorage` internally so favorites persist.
+- [x] Wrap the app with `FavoritesProvider`.
 
 ---
 
 ## 3. Routing & Required Pages
 
 - [ ] Add routes:
-  - [ ] `/` → **HomePage**
-  - [ ] `/category/:categoryName` → **CategoryPage**
-  - [ ] `/recipe/:recipeId` → **RecipeDetailPage**
-  - [ ] `/favorites` → **FavoritesPage**
-  - [ ] `/search` → \*\*SearchResultsPage`(reads`query` from URL params)
+  - [x] `/` → **HomePage**
+  - [x] `/category/:categoryName` → **CategoryPage**
+  - [x] `/recipe/:recipeId` → **RecipeDetailPage**
+  - [x] `/favorites` → **FavoritesPage**
+  - [x] `/search` → \*\*SearchResultsPage`(reads`query` from URL params)`
 
 ---
 
