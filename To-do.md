@@ -2,15 +2,15 @@
 
 ## 1. Core Hooks
 
-- [ ] **Create `useFetch` hook**
+- [x] **Create `useFetch` hook**
 
-  - [ ] Accepts a callback that returns a Promise.
-  - [ ] Manages: `data`, `loading`, `error`.
-  - [ ] Returns `{ data, loading, error }`.
+  - [x] Accepts a callback that returns a Promise.
+  - [x] Manages: `data`, `loading`, `error`.
+  - [x] Returns `{ data, loading, error }`.
 
-- [ ] **Create `useLocalStorage` hook**
-  - [ ] Wraps `useState`.
-  - [ ] Syncs values to `localStorage` whenever they change.
+- [x] **Create `useLocalStorage` hook**
+  - [x] Wraps `useState`.
+  - [x] Syncs values to `localStorage` whenever they change.
 
 ---
 
