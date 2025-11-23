@@ -42,8 +42,8 @@
 ### **Home Page**
 
 - [x] Fetch categories with `useFetch`.
-- [ ] Display grid/list of categories.
-- [ ] Each links to `/category/{categoryName}`.
+- [x] Display grid/list of categories.
+- [x] Each links to `/category/{categoryName}`.
 
 ### **Category Page**
 
@@ -75,9 +75,9 @@
 
 ## 5. Minimal Components
 
-- [ ] **Navbar**
+- [x] **Navbar**
 
-  - [ ] Links: Home, Favorites.
+  - [x] Links: Home, Favorites.
   - [ ] Search bar → navigates to `/search?query=input`.
 
 - [ ] **RecipeCard**

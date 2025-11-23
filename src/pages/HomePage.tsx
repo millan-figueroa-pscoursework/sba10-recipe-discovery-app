@@ -1,8 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+type Category = {
+  idCategory: string;
+  strCategory: string;
+  strCategoryThumb: string;
+  strCategoryDescription: string;
+};
+
 export default function HomePage() {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   console.log(categories);
   useEffect(() => {
     const fetchCategories = async () => {
