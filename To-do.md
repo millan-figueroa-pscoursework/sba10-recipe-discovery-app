@@ -28,7 +28,7 @@
 
 ## 3. Routing & Required Pages
 
-- [ ] Add routes:
+- [x] Add routes:
   - [x] `/` → **HomePage**
   - [x] `/category/:categoryName` → **CategoryPage**
   - [x] `/recipe/:recipeId` → **RecipeDetailPage**
@@ -41,7 +41,7 @@
 
 ### **Home Page**
 
-- [ ] Fetch categories with `useFetch`.
+- [x] Fetch categories with `useFetch`.
 - [ ] Display grid/list of categories.
 - [ ] Each links to `/category/{categoryName}`.
 
