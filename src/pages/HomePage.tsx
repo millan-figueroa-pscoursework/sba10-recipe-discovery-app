@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import FavoritesList from "../components/FavoritesList";
+// import SearchPage from "./SearchResultsPage";
 
 type Category = {
   idCategory: string;
@@ -11,6 +13,7 @@ type Category = {
 export default function HomePage() {
   const [categories, setCategories] = useState<Category[]>([]);
   console.log(categories);
+
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -30,8 +33,7 @@ export default function HomePage() {
 
   // fetch categories and show them
   return (
-    <main>
-      <h1 className="text-xl font-semibold">Home Page (Categories)</h1>
+    <main className="p-10">
       {categories &&
         categories.map((category) => (
           <Link
@@ -47,6 +49,7 @@ export default function HomePage() {
             <h3>{category.strCategory}</h3>
           </Link>
         ))}
+      <FavoritesList />
     </main>
   );
 }
